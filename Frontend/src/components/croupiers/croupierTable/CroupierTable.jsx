@@ -17,7 +17,8 @@ export const CroupierTable = () => {
             const data = await croupierService.getCrupiers();
             setCrupiers(data);
         } catch (error) {
-            console.error("Error al cargar los crupiers:", error);
+            //console.error("Error al cargar los crupiers:", error);
+            console.log(error)
         }
     };
 
